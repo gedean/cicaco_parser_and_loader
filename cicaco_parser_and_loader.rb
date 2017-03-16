@@ -1,4 +1,4 @@
-class ImportNadiaFile
+class CicacoParserAndLoader
 	REGEX_FUNCTION = /^FUNCTION\s(\d*)/
 	REGEX_SCAN = /^Scan\s\t(\d*)/
 	REGEX_RETENTION_TIME = /^Retention Time\s(\d*.\d*)/
@@ -70,5 +70,5 @@ end
 
 __END__
 
-ImportNadiaFile.new('/vagrant/reduzido.txt').import
-ImportNadiaFile.new('/vagrant/CICACO_MS1.txt').import
+CicacoParserAndLoader.new('/vagrant/reduzido.txt').import
+CicacoParserAndLoader.new('/vagrant/CICACO_MS1.txt').import
